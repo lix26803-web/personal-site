@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年度 Veimia竞聘述职 - 李晓涵</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#0a0a0f;color:#fff;line-height:1.6}
+/* Slide base */
+.slide{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;padding:36px 70px 72px;opacity:0;pointer-events:none;transition:opacity .5s,transform .5s cubic-bezier(.4,0,.2,1);transform:translateX(60px);overflow-y:auto;overflow-x:hidden;justify-content:flex-start}
+.slide.vc{justify-content:center}
+.slide.active{opacity:1;pointer-events:auto;transform:translateX(0)}
+.slide.prev{opacity:0;transform:translateX(-60px)}
+/* Typography */
+.lbl{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#e91e8c;margin-bottom:8px;font-weight:600;flex-shrink:0}
+.tt{font-size:32px;font-weight:700;margin-bottom:10px;text-align:center;line-height:1.3;flex-shrink:0}
+.g{background:linear-gradient(90deg,#e91e8c,#f8bbd0,#fff,#f06292,#e91e8c);background-size:200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:ga 4s linear infinite}
+@keyframes ga{0%{background-position:0%}100%{background-position:200%}}
+.sub{font-size:14px;color:#aaa;text-align:center;max-width:860px;line-height:1.7;flex-shrink:0}
+.badge{display:inline-block;padding:6px 16px;border:1px solid rgba(233,30,140,.4);border-radius:18px;font-size:12px;color:#f06292;margin:4px}
+/* Stats */
+.stats{display:flex;gap:36px;margin-top:18px;flex-wrap:wrap;justify-content:center}
+.stat{text-align:center}.sn{font-size:38px;font-weight:700;color:#e91e8c}.sl{font-size:12px;color:#999;margin-top:3px}
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;width:100%;max-width:1050px;margin-top:14px}
+.card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:16px 18px;font-size:12.5px;color:#bbb;line-height:1.65}
+.card h4{font-size:13.5px;margin-bottom:5px;color:#f8bbd0}
+.card p{margin-top:4px}
+.card .ic{font-size:18px;margin-bottom:6px}
+.card strong{color:#eee}
+/* Box */
+.box{background:rgba(233,30,140,.05);border:1px solid rgba(233,30,140,.12);border-radius:10px;padding:14px 20px;max-width:950px;width:100%;margin-top:10px;font-size:13px;color:#ddd;line-height:1.75}
+.box strong{color:#f8bbd0}.box p+p{margin-top:7px}
+/* Result */
+.result{margin-top:10px;padding:10px 16px;background:rgba(233,30,140,.07);border-radius:8px;font-size:13px;text-align:center;color:#eee;max-width:850px;width:100%}
+.result strong{color:#f8bbd0}
+/* Quote */
+.qt{font-size:12.5px;font-style:italic;color:#f8bbd0;max-width:800px;text-align:left;margin-top:12px;line-height:1.7;padding:10px 16px;border-left:3px solid #e91e8c}
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:0;width:100%;height:3px;background:rgba(255,255,255,.04);z-index:999"><div id="pf" style="height:100%;background:linear-gradient(90deg,#e91e8c,#f06292);transition:width .4s;width:0"></div></div>
+
+<style>
+/* 无限滚动 */
+.scroll-wrap{width:100%;max-width:1100px;overflow:hidden;margin-top:12px;position:relative;height:170px;flex-shrink:0}
+.scroll-track{display:flex;gap:10px;animation:scroll 20s linear infinite;width:max-content;height:100%}
+.scroll-track img{height:100%;border-radius:8px;object-fit:contain;flex-shrink:0}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+/* 轮播 */
+.carousel{position:relative;width:100%;max-width:800px;margin-top:12px;overflow:hidden;border-radius:10px}
+.carousel-inner{display:flex;transition:transform .4s ease}
+.carousel-inner img{width:100%;flex-shrink:0;border-radius:10px}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.6);color:#fff;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;backdrop-filter:blur(4px)}
+.carousel-btn:hover{border-color:#e91e8c;color:#e91e8c}
+.carousel-btn.l{left:10px}
+.carousel-btn.r{right:10px}
+.carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
+.carousel-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.2);transition:.3s}
+.carousel-dots span.active{background:#e91e8c}
+/* Tab切换 */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.tab-btn{padding:6px 14px;border-radius:6px;font-size:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:#aaa;cursor:pointer;transition:.2s}
+.tab-btn.active,.tab-btn:hover{border-color:#e91e8c;color:#e91e8c;background:rgba(233,30,140,.1)}
+.tab-img{margin-top:10px;text-align:center}
+.tab-img img{max-height:280px;max-width:100%;border-radius:10px;border:1px solid rgba(255,255,255,.08);transition:transform .3s}
+.tab-img img:hover{transform:scale(1.02)}
+/* 群聊滚动 */
+.chat-scroll{width:100%;max-width:1100px;overflow:hidden;margin-top:10px}
+.chat-track{display:flex;gap:8px;animation:scroll 30s linear infinite;width:max-content}
+.chat-track img{height:100px;border-radius:6px;flex-shrink:0}
+/* 入场动画 */
+.anim{opacity:0;transform:translateY(14px);transition:all .5s .15s}.slide.active .anim{opacity:1;transform:translateY(0)}
+.anim2{opacity:0;transform:translateY(14px);transition:all .5s .3s}.slide.active .anim2{opacity:1;transform:translateY(0)}
+.anim3{opacity:0;transform:translateY(14px);transition:all .5s .45s}.slide.active .anim3{opacity:1;transform:translateY(0)}
+/* IP浮动 */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.ip-float{animation:float 3s ease-in-out infinite}
+/* Controls */
+.ctrl{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:14px;z-index:999}
+.ctrl button{width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.7);color:#fff;font-size:15px;cursor:pointer;backdrop-filter:blur(8px);transition:.2s}
+.ctrl button:hover{border-color:#e91e8c;color:#e91e8c}
+.ctrl span{font-size:11px;color:#666;min-width:56px;text-align:center}
+/* action links */
+.action-link{display:inline-block;margin-top:4px;font-size:11px;color:#f06292;text-decoration:none;border-bottom:1px dashed rgba(240,98,146,.3)}
+.action-link:hover{color:#e91e8c}
+</style>
+
+<!-- S1: 封面 -->
+<div class="slide vc active" data-i="0">
+  <div class="lbl">Visual Designer · AI Designer · Brand Designer</div>
+  <h1 class="tt"><span class="g">2026年度 Veimia竞聘述职</span></h1>
+  <p class="sub anim">基于结果导向、目标拆解、带队育人、创新意识与AI应用四大维度设计</p>
+  <div class="anim2" style="margin-top:20px"><span class="badge">姓名：李晓涵</span><span class="badge">竞聘岗位：设计产品小组组长</span></div>
+  <img src="IP形象.png" class="ip-float anim3" style="height:120px;margin-top:22px;filter:drop-shadow(0 0 20px rgba(233,30,140,.3))">
+</div>
+
+<!-- S2: 经历-落选 -->
+<div class="slide vc" data-i="1">
+  <div class="lbl">Experience</div>
+  <h1 class="tt"><span class="g">个人经历回顾</span></h1>
+  <p class="sub">上次落选让我想明白了一件事：光靠个人执行力撑不起一个团队。这半年的实践就是我的答卷。</p>
+  <div class="box anim" style="margin-top:16px">
+    <p><strong>半年前 · 落选与反思</strong></p>
+    <p>半年前曾有过一次竞聘经历，挺遗憾的以失败告终。当时每天确实很忙，忙着救火。也是后来才意识到其实自己角色认知出现了问题：我一直在当最强的执行者，而不是体系搭建的管理者——没有去建机制、建标准，导致大家只能等我的指令，团队跑不起来。</p>
+  </div>
+  <div class="qt anim2">"组长该交付的不是工作量，而是一套能自己跑的机制——不依赖某一个人的英雄主义。"</div>
+  <div class="box anim3" style="margin-top:12px">
+    <p><strong>半年实践 · 围绕目标落地动作</strong></p>
+    <p>想明白这件事之后，我给自己定了一个反直觉的目标——<strong>从团队里最忙的人，变成最"闲"的那个人。</strong>因为只有我从执行里抽身，才能站到更高的视角去系统地思考问题、做根本的建设，不然会一直在员工视角里救火。围绕这个方向，我开始做了一系列具体调整。</p>
+  </div>
+</div>
+
+<!-- S3: 实践成果 -->
+<div class="slide vc" data-i="2">
+  <div class="lbl">Results</div>
+  <h1 class="tt"><span class="g">实践成果</span></h1>
+  <p class="sub">半年时间，不是靠加人加班，是靠体系和方法。完成74个产品上新，共计204次站点交付。</p>
+  <div class="stats anim">
+    <div class="stat"><div class="sn">10→20</div><div class="sl">月均上新（款）</div></div>
+    <div class="stat"><div class="sn">3站</div><div class="sl">提前交付</div></div>
+    <div class="stat"><div class="sn">规范化</div><div class="sl">质量机制建立</div></div>
+  </div>
+  <div class="scroll-wrap anim2" style="margin-top:20px">
+    <div class="scroll-track">
+      <img src="showcase/1.jpg"><img src="showcase/2.jpg"><img src="showcase/3.jpg"><img src="showcase/4.jpg"><img src="showcase/5.jpg"><img src="showcase/6.jpg"><img src="showcase/7.jpg"><img src="showcase/8.jpg">
+      <img src="showcase/1.jpg"><img src="showcase/2.jpg"><img src="showcase/3.jpg"><img src="showcase/4.jpg"><img src="showcase/5.jpg"><img src="showcase/6.jpg"><img src="showcase/7.jpg"><img src="showcase/8.jpg">
+    </div>
+  </div>
+</div>
+
+<!-- S4: 目标拆解总览 -->
+<div class="slide vc" data-i="3">
+  <div class="lbl">Actions</div>
+  <h1 class="tt"><span class="g">目标拆解与落地</span></h1>
+  <p class="sub">围绕提升质量和产能翻倍的核心目标展开</p>
+  <p class="sub anim" style="margin-top:6px;font-size:13px"><strong style="color:#f8bbd0">我的拆解逻辑：</strong>产量翻倍意味着效率必须翻倍——往哪里找效率？我从三个方向切入：质量止血、时间释放、人员提能。</p>
+  <div class="cards anim2" style="margin-top:18px">
+    <div class="card"><div class="ic">📏</div><h4>01 · 质量方向</h4><p>质量标准缺失导致反复返工，先建规范止血</p></div>
+    <div class="card"><div class="ic">⏱️</div><h4>02 · 时间分配方向</h4><p>时间结构不合理，重新梳理优先级释放产能</p></div>
+    <div class="card"><div class="ic">👥</div><h4>03 · 人员能力方向</h4><p>能力参差拖慢整体节奏，因材施教让每个人有方向</p></div>
+  </div>
+</div>
+
+<!-- S5: 质量-洞察 -->
+<div class="slide" data-i="4">
+  <div class="lbl">01 · 质量方向</div>
+  <h1 class="tt"><span class="g">让"做对"不靠人的自觉</span></h1>
+  <div class="box anim">
+    <p><strong>洞察：</strong>图片因排版、模特、表现力风格等细节频繁返工。设计师觉得"我明明按需做完了为什么又要改"——我判断这不只是质量问题，<strong>本质是标准缺失</strong>。没有标准的时候，每次交付都在"猜"，猜错就返工。</p>
+    <p>久了团队不只是效率低，而是"怕做错"——<strong>这比返工本身更危险。</strong></p>
+  </div>
+  <div class="box anim2">
+    <p><strong>原因拆解与优先级判断：</strong>为什么会反复返工？我找到了三层原因：</p>
+    <p>内部标准规范缺失 <span style="color:#e91e8c">·</span> 设计师对目标市场和品类展示逻辑缺少专业认知 <span style="color:#e91e8c">·</span> 新人缺少现成的参照物兜底</p>
+    <p style="margin-top:8px">三层原因里，我判断<strong>标准缺失是第一优先级</strong>——它是唯一能立刻止血的。品类认知是中期能力建设，案例库是长期飞轮。我的节奏：<strong>止血 → 治本 → 造飞轮。</strong></p>
+  </div>
+</div>
+
+<!-- S6: 质量-解法 -->
+<div class="slide" data-i="5">
+  <div class="lbl">01 · 质量方向 · 落地动作</div>
+  <h1 class="tt"><span class="g">三层解法 + 闭环</span></h1>
+  <div class="cards anim">
+    <div class="card">
+      <div class="ic">📏</div><h4>止血：制图规范</h4>
+      <p>统一标准落到文档上，什么能做什么不能做，动手前就知道边界</p>
+      <a class="action-link" href="https://alidocs.dingtalk.com/i/nodes/Gl6Pm2Db8D39pAAvsGl3D6kEJxLq0Ee4" target="_blank">📄 产品落地页制作规范</a><br>
+      <a class="action-link" href="https://alidocs.dingtalk.com/i/nodes/ZgpG2NdyVXrvkZZYTAy9rR1w8MwvDqPk" target="_blank">📄 主图视觉规范</a>
+    </div>
+    <div class="card">
+      <div class="ic">🎯</div><h4>治本：提升品类认知</h4>
+      <p>让设计师不只是"接到需求就动手"，而是先理解这个品类该怎么呈现。通过参与目标市场调研、沉淀品类经验、输出风格指引，真正理解"为什么要这样做"</p>
+    </div>
+    <div class="card">
+      <div class="ic">📦</div><h4>飞轮：素材库·模板库</h4>
+      <p>优秀案例沉淀为参照物，新人有物可依，老人有标杆可对齐——团队最差的图也不会差太远</p>
+    </div>
+  </div>
+  <div class="box anim2">
+    <p><strong>三层解法落地后，怎么保证持续有效？——闭环：复盘机制</strong></p>
+    <p>产品上线后复盘，沉淀经验反哺规范——形成"制作→上线→复盘→优化"的持续改善闭环。即使没人盯着，规范也在被持续更新。</p>
+  </div>
+  <div class="result anim3"><strong>结果：</strong>从"怕做错"到"知道边界在哪" · 返工率明显下降 · 团队状态更积极</div>
+</div>
+
+<!-- S7: 质量-迭代 -->
+<div class="slide vc" data-i="6">
+  <div class="lbl">01 · 质量方向 · 持续迭代</div>
+  <h1 class="tt"><span class="g">从"做对"到"做好"</span></h1>
+  <div class="box anim">
+    <p>以上是已经做完并且看到效果的。但管理不是做完就停——规范上线后返工确实降了，但我最近发现了一个更隐蔽的问题——</p>
+    <p>大家按定义表做了，出来的图也没有明显的"错"，但我看得出来：<strong>设计师只是复刻了参考截图的排版逻辑，没有真正转化为目标市场的视觉语言。</strong></p>
+    <p>这种问题比"做错"更难被发现——因为它看起来"合格"，但离"专业"还有一步。</p>
+  </div>
+  <div class="box anim2">
+    <p><strong>我的判断：</strong>定义表截图只是"表达方向"，不是最终标准。设计师完全可以结合市场认知做本土化转化。<strong>下一步就是把团队从"能完成需求"推向"能读懂需求、超越需求"。</strong></p>
+  </div>
+</div>
+
+<!-- S8: 时间-洞察+决策 -->
+<div class="slide vc" data-i="7">
+  <div class="lbl">02 · 时间分配方向</div>
+  <h1 class="tt"><span class="g">发现真正的瓶颈</span></h1>
+  <div class="box anim">
+    <p><strong>发现问题：</strong>原来上新占70%、日常修改和亚马逊占30%。随着亚马逊选品激增，开始侵占上新时间——<strong>产量翻倍的前提下，这个时间结构已经撑不住了。</strong></p>
+    <p style="margin-top:8px"><strong>我的决策：</strong>产能不够时有三条路——加人、加班、砍流程。<strong>前两条治标不治本，我选择从流程上消灭不该存在的环节。</strong>提效不是让人做得更快，而是从结构上重新分配时间。</p>
+  </div>
+</div>
+
+<!-- S9: 时间-亚马逊重构 -->
+<div class="slide" data-i="8">
+  <div class="lbl">02 · 时间分配 · 亚马逊流程重构</div>
+  <h1 class="tt"><span class="g">重构亚马逊作图流程</span></h1>
+  <p class="sub" style="color:#e91e8c;font-weight:600">1天 → 2~3小时/品</p>
+  <div class="box anim">
+    <p><strong>判断：</strong>亚马逊和独立站用的是同一套模特图和卖点素材，区别只是排版结构。<strong>这意味着"重新排版"这个动作是可以被AI替代的</strong>——不需要设计师重新动手。</p>
+    <p style="margin-top:6px"><strong>原流程：</strong>独立站图完成 → 运营重新提需 → 设计师手动重新排版 → 翻译审核 → 来回修改。一个品大约需1天。</p>
+    <p><strong>新流程：</strong>独立站整套图喂给GPT → AI分析内容自动排版 → 翻译审核 → 交付运营。<strong>一个品2~3小时。</strong></p>
+    <p style="margin-top:6px"><strong>质量把控：</strong>运营担心AI出图有风险，我通过提示词严格约束打消顾虑——<strong>必须使用独立站原有的模特图和卖点图，AI只负责排版重构，不改动核心素材。</strong>实际效果发现AI排版甚至更本土化。</p>
+  </div>
+  <!-- 轮播 -->
+  <div class="carousel anim2" id="amzCarousel">
+    <div class="carousel-inner" id="amzInner">
+      <img src="amazon/1.jpg"><img src="amazon/2.jpg"><img src="amazon/3.jpg">
+    </div>
+    <button class="carousel-btn l" onclick="carouselGo('amz',-1)">‹</button>
+    <button class="carousel-btn r" onclick="carouselGo('amz',1)">›</button>
+  </div>
+  <div class="carousel-dots" id="amzDots"><span class="active"></span><span></span><span></span></div>
+</div>
+
+<!-- S10: 时间-工具 -->
+<div class="slide vc" data-i="9">
+  <div class="lbl">02 · 时间分配 · 工具开发</div>
+  <h1 class="tt"><span class="g">针对高频耗时点开发工具</span></h1>
+  <div class="box anim">
+    <p><strong>诊断逻辑：</strong>我梳理了上新全流程，把每个环节按"需不需要设计能力"分类——<strong>不需要创意判断的机械环节，就不该占用设计师时间。</strong></p>
+    <p style="margin-top:8px">· 尺码表自动生成 → <strong>20min → 30秒/三站</strong></p>
+    <p>· 快速捆绑生成器 → <strong>30min → 1min</strong></p>
+    <p>· 快速白底图换色工具 → <strong>20min → 1min</strong></p>
+  </div>
+  <div class="result anim2"><strong>结果：</strong>上新产能翻倍 · 亚马逊从占用1天变成2小时收工 · 设计师的时间真正回到了上新主线上</div>
+</div>
+
+<!-- S11: 人员-洞察+策略 -->
+<div class="slide vc" data-i="10">
+  <div class="lbl">03 · 人员能力方向</div>
+  <h1 class="tt"><span class="g">能力参差，因材施教</span></h1>
+  <div class="box" style="margin-top:12px">
+    <p><strong>洞察：</strong>团队每个人能力和性格差异很大，但之前"统一标准、统一要求"——<strong>强的人没方向，弱的人没支撑，中间的人不知道往哪使劲。</strong></p>
+  </div>
+  <p style="font-size:13px;color:#aaa;margin-top:14px">我的策略：按能力和主动性分层，给不同的人不同的培养路径 ↓</p>
+  <div class="cards" style="margin-top:12px;grid-template-columns:repeat(3,1fr)">
+    <div class="card" style="border-top:2px solid #e91e8c">
+      <div class="ic">🚀</div>
+      <h4>能力强+主动性高</h4>
+      <p>给方向、给课题，让她领跑</p>
+    </div>
+    <div class="card" style="border-top:2px solid #f06292">
+      <div class="ic">📣</div>
+      <h4>能力强+主动性一般</h4>
+      <p>用"输出倒逼成长"，让她教别人</p>
+    </div>
+    <div class="card" style="border-top:2px solid #f8bbd0">
+      <div class="ic">🌱</div>
+      <h4>还在成长中</h4>
+      <p>给明确目标、正向反馈，不让她空转</p>
+    </div>
+  </div>
+  <p style="font-size:11px;color:#888;margin-top:12px">日常通过定期1v1跟进每个人的状态和进展，确保培养有节奏地持续推进。</p>
+</div>
+
+<!-- S12: 人员-每个人 -->
+<div class="slide vc" data-i="11">
+  <div class="lbl">03 · 人员 · 因材施教</div>
+  <h1 class="tt"><span class="g">每个人的培养动作与变化</span></h1>
+  <div style="display:flex;gap:24px;align-items:center;margin-top:16px;width:100%;max-width:1000px;justify-content:center">
+    <svg width="300" height="300" viewBox="0 0 300 300" style="flex-shrink:0">
+      <rect x="0" y="0" width="300" height="300" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <line x1="150" y1="20" x2="150" y2="280" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <line x1="20" y1="150" x2="280" y2="150" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <text x="150" y="14" text-anchor="middle" fill="#888" font-size="10">能力 ↑</text>
+      <text x="285" y="154" text-anchor="end" fill="#888" font-size="10">主动性 →</text>
+      <text x="220" y="60" fill="#f06292" font-size="14" font-weight="bold">雪雪</text>
+      <text x="100" y="70" fill="#f06292" font-size="14" font-weight="bold">红红</text>
+      <text x="200" y="140" fill="#f06292" font-size="14" font-weight="bold">莹莹</text>
+      <text x="90" y="150" fill="#f06292" font-size="14" font-weight="bold">梦阳</text>
+      <text x="60" y="135" fill="#f06292" font-size="14" font-weight="bold">肖杰</text>
+      <text x="20" y="292" fill="#666" font-size="9">* 新人陈瑞莹带教中</text>
+    </svg>
+    <div style="display:flex;flex-direction:column;gap:6px;font-size:11px;color:#bbb;max-width:320px">
+      <div style="padding:8px 12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:6px"><b style="color:#f8bbd0">雪雪</b>：给AI课题方向，从“个人用AI”转向“带动团队AI应用”</div>
+      <div style="padding:8px 12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:6px"><b style="color:#f8bbd0">红红</b>：组织排版分享会，用“教”倒逼梳理方法论</div>
+      <div style="padding:8px 12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:6px"><b style="color:#f8bbd0">莹莹</b>：优先英韩站放大优势，分享会补日站短板</div>
+      <div style="padding:8px 12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:6px"><b style="color:#f8bbd0">梦阳</b>：给清晰阶段目标和品类深耕方向</div>
+      <div style="padding:8px 12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:6px"><b style="color:#f8bbd0">肖杰</b>：多正向反馈公开认可，从默默做变主动表达</div>
+    </div>
+  </div>
+</div>
+
+<!-- S13: 人员-成果 -->
+<div class="slide vc" data-i="12">
+  <div class="lbl">03 · 人员 · 带来的变化</div>
+  <h1 class="tt"><span class="g">带来的变化</span></h1>
+  <div class="cards anim">
+    <div class="card"><h4>01 · 开始建立各自的专长方向</h4><p>不再是"你自己想办法"，每个人有了明确的成长方向</p></div>
+    <div class="card"><h4>02 · 经验开始在团队内流动</h4><p>红红做排版分享、雪雪做AI输出，知识不再只留在个人手里</p></div>
+    <div class="card" style="border-color:rgba(233,30,140,.3)"><h4>03 · 分工更清晰，救火少了</h4><p>谁擅长什么、谁往哪走逐渐清楚，分任务不再纠结，管理精力开始往规划上转</p></div>
+  </div>
+  <div class="qt anim2">"核心逻辑：把'对人的依赖'转化为'对体系的依赖'——新人来了有路径可走，骨干有空间可成长，管理者的精力从'填补下限'转向'拉高上限'。"</div>
+</div>
+
+<!-- S14: 协同推动 -->
+<div class="slide" data-i="13">
+  <div class="lbl">Collaboration</div>
+  <h1 class="tt"><span class="g">协同推动</span></h1>
+  <p class="sub">对内的三个方向解决了团队自身的效率问题，但产能翻倍不是关起门能做到的——上下游链路顺不顺，直接决定整体节奏。</p>
+  <p class="sub anim" style="margin-top:4px;font-size:13px"><strong style="color:#f8bbd0">我的协同观：</strong>如果我的组快了，但上下游反而更卡了，那不叫提效，叫转移矛盾。我做的每一个决策，出发点是"整条链路怎么跑得更顺"。</p>
+  <div class="cards anim2">
+    <div class="card">
+      <div class="ic">📋</div><h4>多部门进度对齐：搭建协作多维表</h4>
+      <p><strong>问题：</strong>产品开发表信息量太大，设计/翻译/编辑各看各的，进度对齐全靠口头追问。</p>
+      <p><strong>动作：</strong>主动从原表中提取关键信息，搭建一站式进度跟进表，三站有动作都能即时同步。</p>
+      <p><strong>结果：多部门协作从"各看各的表"变成"一表全通"。</strong></p>
+    </div>
+    <div class="card">
+      <div class="ic">🔗</div><h4>新流程协作卡点：主动梳理+月度复盘</h4>
+      <p><strong>问题：</strong>新工作流翻译前置后，各岗位都在适应期，协作中的卡点容易反复出现但没有被持续跟进。</p>
+      <p><strong>动作：</strong>站在设计端，主动梳理每月遇到的卡点，拉相关人对齐职责边界，建立每月复盘高频问题的机制，持续反馈推动优化。</p>
+      <p><strong>结果：流程衔接顺畅，同类问题复发率明显下降。</strong></p>
+    </div>
+    <div class="card">
+      <div class="ic">🌐</div><h4>新站翻译瓶颈：主动找AI方案解决</h4>
+      <p><strong>问题：</strong>马来语、台湾站等新站涌入，等文案组排期会卡住整体上线节奏。</p>
+      <p><strong>动作：</strong>主动找AI翻译工具解决手动替换的低效模式，目前已在日常使用中；后续计划协调研发资源搭建更自动化的翻译流程。</p>
+      <p><strong>结果：新站点上线节奏不因设计环节卡住。</strong></p>
+    </div>
+  </div>
+  <div class="qt anim3">协作不是"我帮你做你的事"——是理解对方的节奏和局限，在自己能做的范围内主动配合、主动反馈、主动借力。比如我们知道产品在某些品上生图遇阻可能会影响整体进度，便会主动参与前置协助生图。不甩锅，不等待，让整个链路跑顺畅。</div>
+</div>
+
+<!-- S15: 赋能-对内 -->
+<div class="slide" data-i="14">
+  <div class="lbl">Impact · 对内</div>
+  <h1 class="tt"><span class="g">赋能与带动 · 团队AI赋能</span></h1>
+  <p class="sub">协同解决的是整体链路上的卡点。但还有一层更长远的事——不只帮人解决问题，而是让更多人具备自己解决问题的能力。</p>
+  <div class="box anim">
+    <p><strong>为什么我要花精力做这件事：</strong>AI是未来设计团队的基础能力。<strong>如果只有少数人会用，团队的效率天花板就是少数人的上限。</strong>我需要把AI能力从"个人优势"变成"团队的基础设施"。</p>
+    <p style="margin-top:6px"><strong>现状判断：</strong>大家不排斥AI，但日常节奏快，尝试是散点式的，<strong>缺的不是意愿，是方向和持续推动的人。</strong></p>
+    <p style="margin-top:6px"><strong>我的策略：</strong><strong>激发探索</strong>（鼓励每个人都去尝试不同方向，覆盖面越广概率越大）→ <strong>陪跑支持</strong>（谁在探索中遇到卡点，我就介入帮她优化思路、调提示词、判断场景是否可行）→ <strong>正反馈+沉淀</strong>（做出成果就公开认可，同时纳入AI案例库，<strong>让个人探索变成团队资产</strong>）。</p>
+  </div>
+  <div class="chat-scroll anim2">
+    <div class="chat-track">
+      <img src="screenshots/chat (1).png"><img src="screenshots/chat (2).png"><img src="screenshots/chat (3).png"><img src="screenshots/chat (4).png"><img src="screenshots/chat (5).png"><img src="screenshots/chat (6).png"><img src="screenshots/chat (7).png"><img src="screenshots/chat (8).png"><img src="screenshots/chat (9).png"><img src="screenshots/chat (10).png">
+      <img src="screenshots/chat (1).png"><img src="screenshots/chat (2).png"><img src="screenshots/chat (3).png"><img src="screenshots/chat (4).png"><img src="screenshots/chat (5).png"><img src="screenshots/chat (6).png"><img src="screenshots/chat (7).png"><img src="screenshots/chat (8).png"><img src="screenshots/chat (9).png"><img src="screenshots/chat (10).png">
+    </div>
+  </div>
+  <div class="result anim3"><strong>结果：</strong>团队从"不知道AI能干嘛"变成主动探索、互相讨论、自己找方向深入。<strong>AI能力不再依赖我一个人推动，开始自己生长。</strong></div>
+</div>
+
+<!-- S16: 赋能-对外 -->
+<div class="slide" data-i="15">
+  <div class="lbl">Impact · 对外</div>
+  <h1 class="tt"><span class="g">跨部门赋能</span></h1>
+  <p class="sub">不只解决自己团队的问题——主动跨出本部门，用工具和方法论为其他部门创造价值。</p>
+  <div class="cards anim">
+    <div class="card">
+      <div class="ic">🛠️</div><h4>做工具解决实际问题</h4>
+      <p>发现协作部门有痛点，判断可行后主动动手。给编辑部做了捆绑图工具和买家秀生成器，<strong>已落地投入使用</strong>。</p>
+    </div>
+    <div class="card">
+      <div class="ic">🎓</div><h4>输出方法论而不只是工具</h4>
+      <p>通过开跨部门培训，不只教工具怎么用——而是从怎么发现痛点、怎么判断值不值得做、到怎么落地，<strong>把整套思维方式拆给同事</strong>，提升各部门对业务的拆解能力和AI使用能力。</p>
+    </div>
+    <div class="card">
+      <div class="ic">🧭</div><h4>逐渐成为AI方向的协作节点</h4>
+      <p>其他部门同事遇到AI相关问题会主动来找我聊可行性、探讨思路。<strong>从"帮忙做"变成"一起想"</strong>，影响力从个人延伸到了组织。</p>
+    </div>
+  </div>
+  <div class="qt anim2">一个人做工具只能解决一个点。但当我开始输出思维方式、被更多人信任时，<strong>影响力就从"帮忙"变成了"赋能"</strong>——推动大家学会用新方法解决老问题。</div>
+</div>
+
+<!-- S17: 创新-方法论 -->
+<div class="slide" data-i="16">
+  <div class="lbl">Innovation</div>
+  <h1 class="tt"><span class="g">创新与AI应用</span></h1>
+  <p class="sub">前面讲了"我怎么诊断问题、怎么决定做什么"，这个板块展示我的创新方法论和具体产出。我不是技术出身，做工具不是因为兴趣，是因为有些环节天然就是机械的、重复的、不应该由人来做的。</p>
+  <div class="box anim">
+    <p><strong>我的底层逻辑：</strong>起点不是"我会什么AI工具"，而是"业务里哪些动作在反复消耗人力"。正确的顺序是：从业务痛点出发，找到适合工具化的场景，再决定用什么技术解决。</p>
+  </div>
+  <div class="cards anim2">
+    <div class="card">
+      <h4>什么场景值得做？</h4>
+      <p>① <strong>高频</strong> — 每天或每周都在发生的动作<br>② <strong>影响交付结果</strong> — 直接关联效率、成本或质量<br>③ <strong>可标准化</strong> — 输入输出相对清楚，不依赖主观判断</p>
+    </div>
+    <div class="card">
+      <h4>怎么落地？</h4>
+      <p>01 <strong>拆动作</strong>——把流程里重复、耗时、可描述的环节拎出来<br>02 <strong>最小交付</strong>——先做一个能省时间的小方案，不追求大系统<br>03 <strong>真实验证</strong>——给实际使用的人跑，能用再迭代，不能用就换方向</p>
+    </div>
+    <div class="card">
+      <h4>总结</h4>
+      <p>创新不是自己做几个工具，而是——持续审视工作流程中的低效环节，判断哪些适合用AI改造，推动团队建立"发现问题→评估可行性→最小验证→规模化"的创新习惯。</p>
+    </div>
+  </div>
+</div>
+
+<!-- S18: 工具-尺码表捆绑买家秀 -->
+<div class="slide" data-i="17">
+  <div class="lbl">Innovation · 已落地工具</div>
+  <h1 class="tt"><span class="g">工具产出</span></h1>
+  <div class="cards anim" style="grid-template-columns:repeat(3,1fr)">
+    <div class="card"><h4>📐 尺码表自动生成</h4><p>多站点尺码表制作，人工填数据高频出错<br><strong style="color:#e91e8c">20min→30秒/三站，错误率→0</strong></p></div>
+    <div class="card"><h4>📦 快速捆绑生成器</h4><p>捆绑信息频繁调整，设计师产能被占用<br><strong style="color:#e91e8c">30min→1min，编辑自助，双部门提效</strong></p></div>
+    <div class="card"><h4>📸 买家秀生成器</h4><p>买家秀素材产出<br><strong style="color:#e91e8c">AI辅助生成场景图，日常使用中</strong></p></div>
+  </div>
+  <!-- 尺码表+买家秀轮播 -->
+  <div class="carousel anim2" id="toolCarousel" style="max-width:700px">
+    <div class="carousel-inner" id="toolInner">
+      <img src="screenshots/尺码表 (1).png"><img src="screenshots/尺码表 (2).png"><img src="screenshots/尺码表 (3).png"><img src="screenshots/捆绑图.png"><img src="screenshots/买家秀 (1).jpg"><img src="screenshots/买家秀 (2).jpg"><img src="screenshots/买家秀 (3).jpg"><img src="screenshots/买家秀 (4).jpg">
+    </div>
+    <button class="carousel-btn l" onclick="carouselGo('tool',-1)">‹</button>
+    <button class="carousel-btn r" onclick="carouselGo('tool',1)">›</button>
+  </div>
+  <div class="carousel-dots" id="toolDots"><span class="active"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+
+<!-- S19: AI模特工具箱 (Tab切换) -->
+<div class="slide" data-i="18">
+  <div class="lbl">Innovation · 重点项目</div>
+  <h1 class="tt"><span class="g">AI模特工具箱</span></h1>
+  <p class="sub">从产品平铺图到模特展示图，全链路覆盖。一个人从0搭建的覆盖"产品图→模特图"全链路AI工具系统，从需求发现到界面搭建全程独立完成。</p>
+  <div class="box anim">
+    <p>目的不只是提效——也是为了解决产品部多工具并行导致的<strong>出图质量不稳定问题</strong>，统一系统让产出质量可控。7月新品已完成模特测试，下月开始赋能产品部试跑。</p>
+  </div>
+  <div class="tabs anim2" id="toolboxTabs">
+    <div class="tab-btn active" onclick="switchTab(0)">模特图生成</div>
+    <div class="tab-btn" onclick="switchTab(1)">姿势裂变</div>
+    <div class="tab-btn" onclick="switchTab(2)">产品换色</div>
+    <div class="tab-btn" onclick="switchTab(3)">智能扩图</div>
+    <div class="tab-btn" onclick="switchTab(4)">模特穿戴</div>
+    <div class="tab-btn" onclick="switchTab(5)">场景穿搭</div>
+  </div>
+  <div class="tab-img anim3" id="toolboxImg">
+    <img src="screenshots/模特图生成.png" id="tbImg">
+  </div>
+</div>
+
+<!-- S20: 未来规划 -->
+<div class="slide" data-i="19">
+  <div class="lbl">Future</div>
+  <h1 class="tt"><span class="g">未来规划</span></h1>
+  <div class="cards anim">
+    <div class="card">
+      <h4>01 · 设计师角色重塑</h4>
+      <p>在AI的大环境下，设计师最大的价值不再是执行本身，而是<strong>对业务的理解和认知</strong>。AI可以放大执行效率，但理解"该做什么、为什么这样做"只能靠人。所以下一步要帮助团队做业务方向的深耕，用AI释放执行时间，把精力投入到成为品类和市场的专家上。同时把输入端的内容标准前置，在需求阶段就对齐好方向，降低返工率。</p>
+    </div>
+    <div class="card">
+      <h4>02 · 出品质量深化</h4>
+      <p>我注意到销量好的品基本集中在背心裤子内裤类，内衣本身很少爆——<strong>说明内衣品类需要在展示效果上下更多功夫。</strong>下一步要通过本土化风格研究+品类表达力训练，让团队具备"图要说什么话"的意识，<strong>从"好看"走向"有效"。</strong></p>
+    </div>
+    <div class="card">
+      <h4>03 · AI生产体系化</h4>
+      <p>目前是针对卡点做专项工具，下一步要走向<strong>可维护的正轨工作流</strong>——借助N8N、Kiro等AI工具搭建自动化流水线，把生图、排版、翻译等环节串联起来，而不是依赖单点工具无脑堆叠。<strong>最终目标：团队产能不再受人力线性限制。</strong></p>
+    </div>
+    <div class="card">
+      <h4>04 · 个人成长</h4>
+      <p>下一阶段会更主动地与上级同步信息、获取方向输入，<strong>让自己的判断和行动与组织整体目标保持对齐</strong>——不只基于团队视角，也融入业务全局视角。</p>
+    </div>
+  </div>
+</div>
+
+<!-- S21: 结尾 -->
+<div class="slide vc" data-i="20">
+  <div class="lbl">Thank You</div>
+  <h1 class="tt"><span class="g">感谢大家</span></h1>
+  <img src="IP形象.png" class="ip-float anim" style="height:120px;margin:18px 0;filter:drop-shadow(0 0 20px rgba(233,30,140,.3))">
+  <p class="sub anim2" style="max-width:650px">我的管理经验不算丰富，很多东西是在做的过程中一点点摸索出来的。</p>
+  <p class="sub anim3" style="max-width:650px;margin-top:10px">但我最大的优势是：<strong style="color:#f8bbd0">愿意花时间想怎么让事情变得更好，也愿意动手把想法变成现实。</strong></p>
+  <p class="sub" style="max-width:650px;margin-top:10px;opacity:.7">接下来的路还很长，我会继续陪着Veimia往前跑。</p>
+</div>
+
+<!-- 控制栏 -->
+<div class="ctrl">
+  <button onclick="go(-1)">‹</button>
+  <span id="pn">1 / 21</span>
+  <button onclick="go(1)">›</button>
+</div>
+
+<script>
+// === 翻页逻辑 ===
+const slides = document.querySelectorAll('.slide');
+const total = slides.length;
+let cur = 0;
+
+function show(n) {
+  slides.forEach((s, i) => {
+    s.classList.remove('active', 'prev');
+    if (i === n) s.classList.add('active');
+    else if (i < n) s.classList.add('prev');
+  });
+  document.getElementById('pn').textContent = (n + 1) + ' / ' + total;
+  document.getElementById('pf').style.width = ((n + 1) / total * 100) + '%';
+}
+
+function go(d) {
+  const n = cur + d;
+  if (n >= 0 && n < total) { cur = n; show(cur); }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') { e.preventDefault(); go(1); }
+  else if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+  else if (e.key === 'Home') { e.preventDefault(); cur = 0; show(0); }
+  else if (e.key === 'End') { e.preventDefault(); cur = total - 1; show(cur); }
+});
+
+let tx = 0;
+document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; });
+document.addEventListener('touchend', e => {
+  const d = e.changedTouches[0].clientX - tx;
+  if (Math.abs(d) > 50) { d < 0 ? go(1) : go(-1); }
+});
+
+show(0);
+
+// === 轮播逻辑 ===
+const carousels = {
+  amz: { el: document.getElementById('amzInner'), dots: document.getElementById('amzDots'), cur: 0, total: 3 },
+  tool: { el: document.getElementById('toolInner'), dots: document.getElementById('toolDots'), cur: 0, total: 8 }
+};
+
+function carouselGo(id, d) {
+  const c = carousels[id];
+  c.cur = (c.cur + d + c.total) % c.total;
+  c.el.style.transform = 'translateX(-' + (c.cur * 100) + '%)';
+  const dots = c.dots.querySelectorAll('span');
+  dots.forEach((dot, i) => dot.classList.toggle('active', i === c.cur));
+}
+
+// === Tab切换逻辑 (AI模特工具箱) ===
+const tabImgs = [
+  'screenshots/模特图生成.png',
+  'screenshots/姿势裂变.png',
+  'screenshots/产品换色.png',
+  'screenshots/智能抠图.png',
+  'screenshots/模特穿戴.png',
+  'screenshots/场景穿搭.png'
+];
+
+function switchTab(idx) {
+  const tabs = document.querySelectorAll('#toolboxTabs .tab-btn');
+  tabs.forEach((t, i) => t.classList.toggle('active', i === idx));
+  const img = document.getElementById('tbImg');
+  img.style.opacity = '0';
+  img.style.transform = 'scale(0.95)';
+  setTimeout(() => {
+    img.src = tabImgs[idx];
+    img.style.opacity = '1';
+    img.style.transform = 'scale(1)';
+  }, 200);
+}
+
+// 给tab图片加过渡
+document.getElementById('tbImg').style.transition = 'all 0.3s ease';
+</script>
+</body>
+</html>
